@@ -1,5 +1,6 @@
 ﻿using BindingContext.Models;
 using BindingContext.Repositorios;
+using Windows.UI.Notifications;
 
 namespace BindingContext
 {
@@ -22,7 +23,7 @@ namespace BindingContext
         {
             EstudianteUDLA estudiante = new EstudianteUDLA
             {
-                ID = 10,
+                Id = 10,
                 Nombre = "Santiago",
                 Carrera = "Sofware"
 

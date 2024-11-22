@@ -11,12 +11,12 @@ namespace BindingContext.Models
 
         public EstudianteUDLA() {
 
-            ID = 0;
+            Id = 0;
             Nombre = "";
             Carrera = "";
         }
 
-        public int ID { get; set; }
+        public int Id { get; set; }
         public string Nombre { get; set; }
         public string Carrera { get; set; }
 
