@@ -44,13 +44,17 @@ namespace BindingContext.Repositorios
 
         public EstudianteUDLA DevuelveInfoEstudianteUDLA(int Id)
         {
+
+
+            EstudianteUDLA estudiante = new EstudianteUDLA();
             if (File.Exists(_filename))
             {
 
                 string data = File.ReadAllText(_filename);
+                estudiante = JsonConvert.DeserializeObject<EstudianteUDLA>(data);
 
             }
-
+            return estudiante;
 
         }
 
