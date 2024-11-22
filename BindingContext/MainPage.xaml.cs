@@ -18,6 +18,23 @@ namespace BindingContext
             BindingContext = estudiante;
         }
 
+        private void BotonGuardarEstudiante_Clicked(object sender, EventArgs e) 
+        {
+            EstudianteUDLA estudiante = new EstudianteUDLA
+            {
+                ID = 10,
+                Nombre = "Santiago",
+                Carrera = "Sofware"
+
+            };
+
+            repositorios.CrearEstudianteUDLA(estudiante);
+
+            
+            
+
+        }
+
     }
 
 }

@@ -23,6 +23,11 @@
                 x:Name="Label_carrea"
                 Text="{Binding Carrera}" />
 
+            <Button
+                x:Name="BotonGuardarEstudiante"
+                Text="Guardar Estudiante "
+                Clicked="BotonGuardarEstudiante_Clicked"/>
+
 
         </VerticalStackLayout>
     </ScrollView>
